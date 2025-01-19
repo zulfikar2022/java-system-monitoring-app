@@ -18,9 +18,8 @@ public class App {
                 System.out.println("4. Network Monitoring");
                 System.out.println("5. Process Monitoring");
                 System.out.println("6. System Monitoring");
-                System.out.println("7. Sensors Monitoring");
-                System.out.println("8. File System Information");
-                System.out.println("9. Exit");
+                System.out.println("7. File System Information");
+                System.out.println("8. Exit");
                 System.out.print("Enter your choice: ");
 
                 int choice = scanner.nextInt();
@@ -45,12 +44,9 @@ public class App {
                         SystemMonitoring.displaySystemInfo();
                         break;
                     case 7:
-                        SensorsMonitoring.displaySensorsInfo();
-                        break;
-                    case 8:
                         FileSystemMonitoring.displayFileSystemInfo();
                         break;
-                    case 9:
+                    case 8:
                         System.out.println("Exiting System Monitoring Application.");
                         scanner.close();
                         return;
@@ -59,7 +55,7 @@ public class App {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a number.");
-                scanner.nextLine(); // Clear invalid input
+                scanner.nextLine();
             }
         }
     }

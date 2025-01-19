@@ -8,6 +8,7 @@ public class SensorsMonitoring {
         SystemInfo systemInfo = new SystemInfo();
         Sensors sensors = systemInfo.getHardware().getSensors();
 
+        System.out.println();
         System.out.printf("CPU Temperature: %.1f°C\n", sensors.getCpuTemperature());
         System.out.printf("Fan Speeds: %s\n", java.util.Arrays.toString(sensors.getFanSpeeds()));
         System.out.printf("CPU Voltage: %.1fV\n", sensors.getCpuVoltage());

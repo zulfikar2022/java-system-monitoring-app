@@ -17,6 +17,7 @@ public class ProcessMonitoring {
         // Sort the processes by CPU usage in descending order
         processes.sort((p1, p2) -> Double.compare(p2.getProcessCpuLoadCumulative(), p1.getProcessCpuLoadCumulative()));
 
+        System.out.println();
         System.out.println("Top Processes by CPU Usage:");
         int count = 0;
         for (OSProcess process : processes) {

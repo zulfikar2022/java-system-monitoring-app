@@ -10,7 +10,7 @@ public class MemoryMonitoring {
 
         long totalMemory = memory.getTotal();
         long availableMemory = memory.getAvailable();
-
+        System.out.println();
         System.out.println("\n--- Memory Monitoring ---");
         System.out.println("Total Memory: " + formatBytes(totalMemory));
         System.out.println("Available Memory: " + formatBytes(availableMemory));

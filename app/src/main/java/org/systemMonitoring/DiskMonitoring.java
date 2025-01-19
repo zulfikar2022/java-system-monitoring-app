@@ -12,6 +12,7 @@ public class DiskMonitoring {
         FileSystem fileSystem = systemInfo.getOperatingSystem().getFileSystem();
         List<OSFileStore> fileStores = fileSystem.getFileStores();
 
+        System.out.println();
         System.out.println("\n--- Disk Monitoring ---");
         for (OSFileStore store : fileStores) {
             System.out.println("Drive: " + store.getMount());

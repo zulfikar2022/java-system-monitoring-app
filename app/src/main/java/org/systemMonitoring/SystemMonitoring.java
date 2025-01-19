@@ -8,6 +8,7 @@ public class SystemMonitoring {
         SystemInfo systemInfo = new SystemInfo();
         OperatingSystem os = systemInfo.getOperatingSystem();
 
+        System.out.println();
         System.out.printf("Operating System: %s %s (%s)\n",
                 os.getFamily(), os.getVersionInfo().getVersion(), os.getBitness() + "-bit");
 

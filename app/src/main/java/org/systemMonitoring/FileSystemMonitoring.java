@@ -11,7 +11,7 @@ public class FileSystemMonitoring {
         SystemInfo systemInfo = new SystemInfo();
         FileSystem fileSystem = systemInfo.getOperatingSystem().getFileSystem();
         List<OSFileStore> fileStores = fileSystem.getFileStores();
-
+        System.out.println();
         System.out.println("File System Information:");
         for (OSFileStore fs : fileStores) {
             System.out.printf("Mount: %s, Total Space: %.2f GB, Usable Space: %.2f GB\n",
